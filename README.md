@@ -12,6 +12,12 @@ For installation instructions, see [Installation Instructions](./INSTALL.md)
 
 ## Quick start
 
+Clone the repository:
+
+```
+git clone https://github.com/RuzickaJakub/text-normalization-annotation-application.git
+```
+
 Start the program with the command:
 
 ```
@@ -60,6 +66,12 @@ Anotační applikace pro vytváření datových sad pro normalizaci textu.
 Pro instalační pokyny se podívejte na [Instalační pokyny](./INSTALL.md)
 
 ## Quick start
+
+Stáhněte si repozitář
+
+```
+git clone https://github.com/RuzickaJakub/text-normalization-annotation-application.git
+```
 
 Spusťte program příkazem:
 
