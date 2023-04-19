@@ -85,30 +85,30 @@ export function getTokenTypeColor(token_type: keyof typeof TokenType) {
       color = "Plum";
       break;
     // Parts of numbers
-    // case TokenType.Day:
-    //   color = "Violet";
-    //   break;
-    // case TokenType.Month:
-    //   color = "Tomato";
-    //   break;
-    // case TokenType.Year:
-    //   color = "Turquoise";
-    //   break;
-    // case TokenType.Second:
-    //   color = "Silver";
-    //   break;
-    // case TokenType.Minute:
-    //   color = "Aqua";
-    //   break;
-    // case TokenType.Hour:
-    //   color = "Teal";
-    //   break;
-    // case TokenType.Unit:
-    //   color = "SlateGrey";
-    //   break;
-    // case TokenType.Currency:
-    //   color = "SteelBlue";
-    //   break;
+    case TokenType.Day:
+      color = "Violet";
+      break;
+    case TokenType.Month:
+      color = "Tomato";
+      break;
+    case TokenType.Year:
+      color = "Turquoise";
+      break;
+    case TokenType.Second:
+      color = "Silver";
+      break;
+    case TokenType.Minute:
+      color = "Aqua";
+      break;
+    case TokenType.Hour:
+      color = "Teal";
+      break;
+    case TokenType.Unit:
+      color = "SlateGrey";
+      break;
+    case TokenType.Currency:
+      color = "SteelBlue";
+      break;
     default:
       color = "Black";
   }
