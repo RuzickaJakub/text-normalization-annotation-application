@@ -6,8 +6,8 @@ Installation assumes the presence of `Docker` and `Docker-compose` on the device
 
 ## Download
 
-Download the source files as a ZIP archive and unzip it, or clone it the
-repository using
+Download the source files as a ZIP archive and unzip it, or clone the
+repository using the following command:
 
 ```
 git clone https://github.com/RuzickaJakub/text-normalization-annotation-application.git
@@ -35,15 +35,16 @@ http://localhost:3333
 
 ## Running on the server
 
-To run on the server, change the contents of the `client/.env` file accordingly,
-which defines the address where to send requests for the server. The default is:
+To run on the server, change the contents of the `client/.env` file accordingly.
+The `REACT_APP_BACKEND_URL` line defines the address where to send requests for 
+the server. The default value is set to:
 
 ```
 REACT_APP_BACKEND_URL="http://localhost:5555/api"
 ```
 
-All paths on the backend are prefixed with `/api`. If the application was running
-on the server with the address `https://annotator.ruzickajakub.eu`, then the setting would be:
+All paths on the backend are prefixed with `/api`. If the application would be running
+on the server with the address `https://annotator.ruzickajakub.eu`, then the setting should be:
 
 ```
 REACT_APP_BACKEND_URL="https://annotator.ruzickajakub.eu/api"
@@ -74,13 +75,13 @@ naklonujte z úložiště pomocí příkazu
 git clone https://github.com/RuzickaJakub/text-normalization-annotation-application.git
 ```
 
-Přesuňte se do kořenového adresáře projektu. Zde je projekt rozdělen na dvě
-části dvě hlavní součásti.
+Přesuňte se do kořenového adresáře projektu. Zde je projekt rozdělen na dvě hlavní
+části.
 
-- klient (frontend, spuštěný na uživateli)
+- klient (frontend, běžící u uživatele)
 - server (backend, běžící na serveru).
 
-## Místní běh
+## Lokální spuštění
 
 Pro lokální spuštění není třeba nic nastavovat, stačí program spustit:
 
@@ -104,8 +105,8 @@ požadavky na server. Výchozí hodnota je:
 REACT_APP_BACKEND_URL="http://localhost:5555/api"
 ```
 
-Všechny cesty na backendu mají předponu `/api`. Pokud byl aplikace spuštěn na
-serveru. s adresou `https://annotator.ruzickajakub.eu`, pak by nastavení bylo:
+Všechny cesty na backendu mají předponu `/api`. Pokud by aplikace byla spuštěna na
+serveru s adresou `https://annotator.ruzickajakub.eu`, pak by správné nastavení bylo:
 
 ```
 REACT_APP_BACKEND_URL="https://annotator.ruzickajakub.eu/api"
@@ -115,11 +116,9 @@ REACT_APP_BACKEND_URL="https://annotator.ruzickajakub.eu/api"
 
 Výběr povolených sémiotických tříd se provádí jejich nastavením v souborech:
 
-- `client/src/types/TokenTypes.tsx` (seznam sémiotických tříd).
+- `client/src/types/TokenTypes.tsx` (seznam sémiotických tříd)
 - `client/src/utils/getTokenTypeColor.tsx` (soubor přiřazující barvu každé
-  třídě). třídám)
+  třídě)
 
 Sémiotické třídy povolené v obou souborech by se měly vzájemně shodovat.
 Chcete-li třídu povolit/zakázat, stačí ji odkomentovat/zakomentovat.
-
-

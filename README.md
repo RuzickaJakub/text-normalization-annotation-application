@@ -50,12 +50,12 @@ In the repository, you will find the following files:
     Manual for annotators in Czech ([Link](./MANUAL.md)).
 - `README.md`
     File summarizing basic information about the project.
-    
-The project's core consists of two main parts - frontend and backend. The frontend is the part running on the user, and it is a react application written in typescript. The backend is the part running on the server and is written in Flask (Python). The frontend runs by default on port 3333 and the backend on port 5555. The application is started using the `docker-compose up` command.
+
+The project's core consists of two main parts - the frontend and the backend. The frontend is the part that runs on the user's side, and it is a React application written in TypeScript. The backend is the part that runs on the server and is written in Flask (Python). The frontend runs by default on port 3333, and the backend runs on port 5555. The application is started using the `docker-compose up` command.
 
 ## Sample data
 
-The `example-data` directory contains sample data. The `Example.txt` file contains a dataset named `Example`, which consists of ten sample sentences. The second sample dataset is the already annotated `Example-annotations` dataset, which includes the same sentences as the first dataset plus the appropriate annotations. The dataset names are deliberately different, so both can be uploaded under the same user.
+The `example-data` directory contains sample data. The `Example.txt` file contains a dataset named `Example`, which consists of ten sample sentences. The second sample dataset is the already annotated `Example-annotations` dataset, which includes the same sentences as the first dataset along with the appropriate annotations. The dataset names are deliberately different so that both can be uploaded under the same user.
 
 # TNA - Anotační aplikace pro normalizaci textu
 
@@ -65,7 +65,7 @@ Anotační applikace pro vytváření datových sad pro normalizaci textu.
 
 Pro instalační pokyny se podívejte na [Instalační pokyny](./INSTALL.md)
 
-## Quick start
+## Spuštění
 
 Stáhněte si repozitář
 
@@ -98,7 +98,7 @@ V repozitáři naleznete následující soubory:
 - `example-data`
     Adresář s ukázkou již anotovaných i neanotovaných dat.
 - `docker-compose.yml`
-    Configurační soubor pro docker-compose umožňující spuštění programu na jeden příkaz.
+    Configurační soubor pro program docker-compose umožňující spuštění programu na jeden příkaz.
 - `INSTALL.md`
     Instalační příručka v českém a anglickém jazyce ([Odkaz](./INSTALL.md)). 
 - `MANUAL.md`
@@ -106,7 +106,7 @@ V repozitáři naleznete následující soubory:
 - `README.md`
     Soubor shrnující základní informace o projektu.
     
-Jádro projektu se skládá ze dvou hlavních částí - frontendu a backendu. Frontend je část běžící u užívatele a jedná se react applikaci napsanou v typescriptu. Backend je část běžící na serveru a je napsán ve Flasku (Python). Spuštění aplikace probíhá pomocí příkazu `docker-compose up`. Frontend běží ve výchozím nastavení na portu 3333 a backend na portu 5555.
+Jádro projektu se skládá ze dvou hlavních částí - frontendu a backendu. Frontend je část běžící u užívatele a jedná se React applikaci napsanou v TypeScriptu. Backend je část běžící na serveru a je napsán ve Flasku (Python). Spuštění aplikace probíhá pomocí příkazu `docker-compose up`. Frontend běží ve výchozím nastavení na portu 3333 a backend na portu 5555.
 
 ## Ukázková data
 
